@@ -10,7 +10,7 @@
     <div> Check your emails here !
       <%= link_to 'Email mailbox', '/letter_opener', class: 'btn' %>
     </div>
-    <%= button_to "Change password", '/change-password-email', method: :get, target: :_blank, class: 'btn'; %>
+    <%= button_to "Change password", '/change-password-email', method: :get, target: :_blank, class: 'btn', data: {confirm: 'Are you sure you want to send an email? Please check your mailbox!'} %>
     <h2>You are <%= is_admin? ? 'an Admin' : 'a User' %></h2>
     <%= button_to "Create new user", '/users/new', method: :get, class: 'btn' if is_admin? %>
     <table class="table">

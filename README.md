@@ -13,8 +13,12 @@ $ docker-compose exec web bash
 # Once you are in the docker bash please run:
 $ rails db:create && rails db:migrate && rails db:seed
 # run on browser http://localhost:3000
-
+# admin account:
+# email: 'test@admin.com', password: 'abcd1234'
 ```
+
+
+
 ### To check emails: 
 ##### http://localhost:3000/letter_opener
 
