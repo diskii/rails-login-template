@@ -1,24 +1,20 @@
-# README
+# Rails login template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Rails 5.2.6
+#### ruby '2.5.9'
 
-Things you may want to cover:
 
-* Ruby version
+## First time running the application
+ 
+```
+$ docker-compose build
+$ docker-compose up -d 
+$ docker-compose exec web bash
+# Once you are in the docker bash please run:
+$ rails db:create && rails db:migrate && rails db:seed
+# run on browser http://localhost:3000
 
-* System dependencies
+```
+### To check emails: 
+##### http://localhost:3000/letter_opener
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
